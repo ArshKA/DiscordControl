@@ -3,6 +3,6 @@ A simple class which allows automated control of discord. Please note that this 
 
 # Dependencies
 
-> !pip install brotli
+> pip install brotli
 >
-> !pip install fake_headers
+> pip install fake_headers
