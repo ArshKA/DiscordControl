@@ -7,18 +7,19 @@ import requests
 header_gen = Headers(headers=True)
 
 ID = #enter channel ID here
+authorization = #enter authorization here
 
 class Discord:
   def __init__(self, channel_id, authorization):
     self.channel = channel_id
 
     self.message_header = header_gen.generate()
-    self.message_header['authorization'] = 'authorization'
+    self.message_header['authorization'] = authorization
     self.message_header['Referer'] = 'https://discord.com'
     self.message_header['content-type'] = 'application/json'
 
     self.read_header = header_gen.generate()
-    self.read_header['authorization'] = 'authorization'
+    self.read_header['authorization'] = authorization
     self.read_header['accept-encoding'] = 'gzip;q=0, deflate, br'
     self.read_header['encoding'] = 'json'
     self.read_header['sec-fetch-dest'] = 'empty'
@@ -55,4 +56,4 @@ class Discord:
     time.sleep(2)
     return self.read_response(response.content)
 
-channel = Discord(ID)
+channel = Discord(ID, authorization)
