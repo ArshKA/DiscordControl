@@ -11,6 +11,10 @@ A simple class which allows automated control of discord. Please note that this 
 
 Use this tutorial to find channel ID
 
+https://www.remote.tools/remote-work/how-to-find-discord-id
+
+Make sure you right click the channel and not the server to copy the ID
+
 ## For authorization
 1. Open Discord
 2. Press CTRL + SHIFT + I
