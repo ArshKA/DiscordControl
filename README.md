@@ -1,5 +1,5 @@
 # DiscordControl
-A simple class which allows automated control of discord. Please note that this is against Discord's terms of service
+A simple class which allows automated control of discord. Please note that this it is against Discord's terms of service to automate an user account without registering it as a bot 
 
 # Dependencies
 
